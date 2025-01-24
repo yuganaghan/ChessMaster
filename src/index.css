@@ -1,0 +1,6 @@
+body{
+    display: flex;
+    background-color: #302e2b;
+    justify-content: center;
+    align-self: center;
+}

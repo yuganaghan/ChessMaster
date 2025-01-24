@@ -1,0 +1,6 @@
+Step 1 : Create A Base Piece Class
+Step 2 : Create A Class like King, Queen, Bishop, Knight, Rook, Pawn
+	Step 2.1  It Should have method that return's all the move that are possible
+
+Step 3 : create method in ChessBoard Class to check is there a check
+	so logic is like this i will genrate all move tha can be mad by the a piece then what i will do is that at chess board i will create a method with name of safe moves so that in that i will take all the moves that other color can make and chake all the moves of the current of the selected piece and then chage it's position acording posible moves then i will check for chake if there is check then i will not  include that move 

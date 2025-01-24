@@ -1,0 +1,259 @@
+
+
+/* PieceComponents  */
+.singlePiece {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlackSquare {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(115 149 82);
+}
+
+.WhiteSquare {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235 236 208);
+}
+
+.piece {
+    width: 100%;
+    object-fit: contain;
+}
+
+.piece {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    z-index: 1;
+    object-fit: contain;
+}
+
+
+.promotionPopUp {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    height: 15%;
+    box-shadow: 0 4px 8px rgba(60, 49, 49, 0.5);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 10; 
+}
+
+.promotionPopUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 15%;
+    background-color: rgba(101, 94, 94, 0.626);
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.singlePopUpPiece{
+    display: flex;
+    width: 24%;
+    height: 90%;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.127);
+    border-radius: 8px;
+}
+.singlePopUpPiece:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.622);
+}
+.popUpImg{
+    width: 100%;
+}
+
+
+.checkmate{
+    display:flex;
+    flex-direction:column;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; 
+    height: 35%;
+    box-shadow: 0 4px 8px rgba(60, 49, 49, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 10;
+    font-size:1.1rem;
+    font-weight: bold;
+    background-color:aliceblue;
+}
+
+.Wining-Img{
+    width:65%;
+    margin-bottom:1%;
+}
+
+.resetGame{
+    width:75%;
+    height:15%;
+    border: none;
+    box-shadow: 0px 1px 4px rgba(60, 49, 49, 0.5);
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.resetGame:hover{
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    background-color: black;
+}
+
+
+.draw{
+    display:flex;
+    flex-direction:column;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; 
+    height: 35%;
+    box-shadow: 0 4px 8px rgba(60, 49, 49, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 10;
+    font-size:1.1rem;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.selectedPieceDark{
+    background-color: rgba(245, 245, 104, 0.634);
+}
+
+.selectedPieceWhite{
+    background-color: rgb(245 245 104);
+}
+
+.drawimages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.drawimg{
+    width: 45%;
+}
+
+.bottomSetting{
+    display: flex;
+    width: 100%;
+    height: 6%;
+    background-color: #6b6b6b;
+    justify-content: right;
+    align-items: center;
+}
+.bottomButton{
+    width: 25%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.bottomButton:hover{
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    background-color: black;
+}
+
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    background-color: #d2e5f599;
+    padding-top: 4%;
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    width: 100vh;
+    height: 90vh;
+}
+
+.innerContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 94%;
+}
+
+.boardContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto auto;
+}
+
+
+#baseBoard {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin: auto;
+    z-index: 5;
+}
+
+.mainImg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.sideKing{
+    width: 100%;
+}
+
+.TwoDeadPiece{
+    display: flex;
+    width: 90%;
+    height: 8%;
+}
+
+.oneDeadMove{
+    width: 50%;
+
+}
